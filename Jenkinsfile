@@ -9,7 +9,7 @@ pipeline
             steps
             {
 				echo 'Started Building the App'
-				Powershell.exe -executionpolicy remotesigned -file %WORKSPACE%\Build\Build.ps1
+				bat "Powershell.exe -executionpolicy remotesigned -file %WORKSPACE%\Build\Build.ps1"
             }
         }
         
